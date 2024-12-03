@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #2874f0;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        nav ul li ul li {
+            margin: 5px 0;
+        }
+
+        nav ul li ul li:hover {
+            background-color: #154dc5c5;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(30% - 20px); /* Responsive layout */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #28a745;
+            font-size: 22px;
+        }
+
+        .description {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .features {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2874f0;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                flex: 1 1 calc(45% - 20px); /* Adjust for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                flex: 1 1 100%; /* Stack products on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MyShop</div>
+        <nav>
+            <ul>
+                <li>Electronics
+                    <ul>
+                        <li>Mobile Phones</li>
+                        <li>Laptops</li>
+                        <li>Cameras</li>
+                    </ul>
+                </li>
+                <li>Furniture
+                    <ul>
+                        <li>Sofas</li>
+                        <li>Beds</li>
+                        <li>Dining Tables</li>
+                    </ul>
+                </li>
+                <li>Clothing
+                    <ul>
+                        <li>Men's Clothing</li>
+                        <li>Women's Clothing</li>
+                        <li>Children's Clothing</li>
+ </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product">
+            <h2>Product Name</h2>
+            <p class="price">$99.99</p>
+            <p class="description">This is a brief description of the product.</p>
+            <h3>Key Features:</h3>
+            <ul class="features">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+        </section>
+
+        <section class="product">
+            <h2>Another Product Name</h2>
+            <p class="price">$149.99</p>
+            <p class="description">This is a brief description of another product.</p>
+            <h3>Key Features:</h3>
+            <ul class="features">
+                <li>Feature A</li>
+                <li>Feature B</li>
+                <li>Feature C</li>
+            </ul>
+        </section>
+
+        <section class="product">
+            <h2>Third Product Name</h2>
+            <p class="price">$199.99</p>
+            <p class="description">This is a brief description of the third product.</p>
+            <h3>Key Features:</h3>
+            <ul class="features">
+                <li>Feature X</li>
+                <li>Feature Y</li>
+                <li>Feature Z</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MyShop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
