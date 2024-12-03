@@ -1,0 +1,14 @@
+/* Element Selector */
+p {
+    color: blue; /* First paragraph color */
+}
+
+/* Class Selector */
+.second-paragraph {
+    color: green; /* Second paragraph color */
+}
+
+/* ID Selector */
+#third-paragraph {
+    color: red; /* Third paragraph color */
+}
