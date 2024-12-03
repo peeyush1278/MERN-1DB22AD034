@@ -1,36 +1,75 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
 }
 
-h1 {
-    text-align: center;
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.alignment-example p {
-    margin: 10px 0;
+.title {
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    text-transform: uppercase;
+    text-indent: 10px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
-.left {
-    text-align: left;
+/* Color Example */
+.color-example {
+    color: #2980b9; /* Blue text */
 }
 
-.center {
-    text-align: center;
+/* Background Color Example */
+.bg-color-example {
+    background-color: #e8f8f5; /* Light cyan background */
 }
 
-.right {
-    text-align: right;
+/* Text Transform Example */
+.text-transform-example {
+    text-transform: uppercase; /* Uppercase text */
 }
 
-.direction-example p {
-    margin: 10px 0;
+/* Text Indent Example */
+.text-indent-example {
+    text-indent: 20px; /* Indent first line */
 }
 
-.ltr {
-    direction: ltr; /* Left to Right */
+/* Letter Spacing Example */
+.letter-spacing-example {
+    letter-spacing: 2px; /* Increased letter spacing */
 }
 
-.rtl {
-    direction: rtl; /* Right to Left */
+/* Line Height Example */
+.line-height-example {
+    line-height: 2; /* Increased line height */
+}
+
+/* Word Spacing Example */
+.word-spacing-example {
+    word-spacing: 5px; /* Increased word spacing */
+}
+
+/* White Space Example */
+.white-space-example {
+    white-space: pre-wrap; /* Preserves whitespace */
+}
+
+/* Text Direction Example */
+.text-direction-example {
+    direction: rtl; /* Right-to-left text direction */
+}
+
+/* Text Align Example */
+.text-align-example {
+    text-align: center; /* Center-aligned text */
 }
