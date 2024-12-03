@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Border Types</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .image-container {
+            display: flex; /* Use flexbox to align images next to each other */
+            gap: 20px; /* Space between the images */
+        }
+
+        .image-container img {
+            width: 200px; /* Set the desired width for the images */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .solid {
+            border: 5px solid #333; /* Solid border */
+        }
+
+        .dashed {
+            border: 5px dashed #333; /* Dashed border */
+        }
+
+        .dotted {
+            border: 5px dotted #333; /* Dotted border */
+        }
+
+        .double {
+            border: 5px double #333; /* Double border */
+        }
+
+        .groove {
+            border: 5px groove #333; /* Groove border */
+        }
+
+        .ridge {
+            border: 5px ridge #333; /* Ridge border */
+        }
+
+        .inset {
+            border: 5px inset #333; /* Inset border */
+        }
+
+        .outset {
+            border: 5px outset #333; /* Outset border */
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Border Types</h1>
+    <div class="image-container">
+        <img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--46f84f92-3cda-444b-bb0e-605d50aa156f/_390575742906.app.webp?preferwebp=true" alt="Solid Border" class="solid">
+        <img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--46f84f92-3cda-444b-bb0e-605d50aa156f/_390575742906.app.webp?preferwebp=true" alt="Dashed Border" class="dashed">
+        <img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--46f84f92-3cda-444b-bb0e-605d50aa156f/_390575742906.app.webp?preferwebp=true" alt="Dotted Border" class="dotted">
+        <img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--46f84f92-3cda-444b-bb0e-605d50aa156f/_390575742906.app.webp?preferwebp=true" alt="Double Border" class="double">
+        <img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--46f84f92-3cda-444b-bb0e-605d50aa156f/_390575742906.app.webp?preferwebp=true" alt="Groove Border" class="groove">
+        <img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--46f84f92-3cda-444b-bb0e-605d50aa156f/_390575742906.app.webp?preferwebp=true" alt="Ridge Border" class="ridge">
+        <img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--46f84f92-3cda-444b-bb0e-605d50aa156f/_390575742906.app.webp?preferwebp=true" alt="Inset Border" class="inset">
+        <img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--46f84f92-3cda-444b-bb0e-605d50aa156f/_390575742906.app.webp?preferwebp=true" alt="Outset Border" class="outset">
+    </div>
+</body>
+</html>
