@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.alignment-example p {
+    margin: 10px 0;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.direction-example p {
+    margin: 10px 0;
+}
+
+.ltr {
+    direction: ltr; /* Left to Right */
+}
+
+.rtl {
+    direction: rtl; /* Right to Left */
+}
