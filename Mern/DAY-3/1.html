@@ -6,24 +6,25 @@
     <title>3x3 Photo Matrix</title>
     <style>
         body {
-            display: flex;
-            justify-content: center; /* Center the table horizontally */
-            align-items: center; /* Center the table vertically */
-            height: 100vh; /* Full viewport height */
+            text-align: center; /* Center the matrix horizontally */
             margin: 0; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
+            display: table; /* Use table display for vertical centering */
+            width: 100%; /* Full width */
         }
-        table {
-            width: 80%; /* Set the width of the table */
-            border-collapse: collapse; /* Collapse borders */
-            border: 2px solid #000; /* Add border to the table */
+        .matrix {
+            display: table-row; /* Create a table row */
+            margin: auto; /* Center the matrix */
         }
-        td {
-            border: 1px solid #ccc; /* Border for each cell */
-            text-align: center;
-            padding: 10px;
+        .matrix div {
+            display: inline-block; /* Display each cell inline */
+            border: 4px solid #ccc; /* Border for each cell */
+            margin: 5px; /* Space between cells */
+            padding: 20px; /* Padding inside cells */
+            vertical-align: top; /* Align cells to the top */
         }
         img {
-            max-width: 80cm; /* Responsive image */
+            max-width: 80px; /* Responsive image */
             height: 80px; /* Maintain aspect ratio */
         }
     </style>
@@ -31,23 +32,21 @@
 <body>
 
 <h1>3x3 Photo Matrix</h1>
-<table>
-    <tr>
-        <td><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 1"></td>
-        <td><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 2"></td>
-        <td><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 3"></td>
-    </tr>
-    <tr>
-        <td><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 4"></td>
-        <td><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 5"></td>
-        <td><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 6"></td>
-    </tr>
-    <tr>
-        <td><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 7"></td>
-        <td><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 8"></td>
-        <td><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 9"></td>
-    </tr>
-</table>
+<div class="matrix">
+    <div><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 1"></div>
+    <div><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 2"></div>
+    <div><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 3"></div>
+</div>
+<div class="matrix">
+    <div><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 4"></div>
+    <div><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 5"></div>
+    <div><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 6"></div>
+</div>
+<div class="matrix">
+    <div><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 7"></div>
+    <div><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 8"></div>
+    <div><img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="Photo 9"></div>
+</div>
 
 </body>
 </html>
