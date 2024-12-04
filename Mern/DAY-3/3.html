@@ -6,35 +6,43 @@
     <title>Product Listing Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
+            background-color: #f9f9f9; /* Light background for contrast */
         }
 
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #333;
+            background-color: #4CAF50; /* Green header */
             color: white;
-            padding: 10px 20px;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
         }
 
         .nav-menu ul {
             list-style: none;
             display: flex;
-            gap: 15px;
+            gap: 20px;
         }
 
         .nav-menu a {
             color: white;
             text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #FFD700; /* Gold color on hover */
         }
 
         .search-cart {
@@ -43,12 +51,20 @@
         }
 
         .search-cart input {
-            padding: 5px;
+            padding: 8px;
             margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        .search-cart input:focus {
+            border-color: #4CAF50; /* Change border color on focus */
         }
 
         .cart-icon {
             cursor: pointer;
+            font-size: 20px;
         }
 
         .container {
@@ -59,8 +75,9 @@
         .sidebar {
             width: 25%;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #fff; /* White background for sidebar */
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
 
         .product-grid {
@@ -76,11 +93,44 @@
             border-radius: 5px;
             padding: 10px;
             text-align: center;
+            background-color: #fff; /* White background for products */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         .product img {
             max-width: 100%;
             height: auto;
+            border-radius: 5px; /* Rounded corners for images */
+        }
+
+        .product h5 {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #333; /* Darker text for product names */
+        }
+
+        .product p {
+            font-size: 18px;
+            color: #4CAF50; /* Green color for prices */
+        }
+
+        .product button {
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #45a049; /* Darker green on hover */
         }
 
         .pagination {
@@ -91,6 +141,16 @@
         .pagination button {
             margin: 0 5px;
             padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50; /* Green pagination buttons */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .pagination button:hover {
+            background-color: #45a049; /* Darker green on hover */
         }
 
         footer {
@@ -103,7 +163,6 @@
             width: 100%;
         }
 
-        /* Responsive Styles */
         @media (max-width: 768px) {
             .nav-menu ul {
                 flex-direction: column;
@@ -120,7 +179,7 @@
             }
 
             .product-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1 fr);
             }
 
             .pagination {
