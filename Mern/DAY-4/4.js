@@ -9,6 +9,6 @@ function checkInventory(productName, quantity) {
 }
 
 // Example usage:
-checkInventory("Apples", 5);   // Alert: Apples - Restock immediately!
-checkInventory("Bananas", 15);  // Alert: Bananas - Stock is low.
-checkInventory("Oranges", 25);  // Oranges - Inventory is adequate.
+checkInventory("Apples", 5);  
+checkInventory("Bananas", 15);  
+checkInventory("Oranges", 25);

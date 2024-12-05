@@ -1,5 +1,4 @@
 function withdraw(amount, balance) {
-    // Check if the amount is a multiple of 10
     if (amount % 10 !== 0) {
         alert("The amount must be a multiple of 10.");
         return;
@@ -11,20 +10,18 @@ function withdraw(amount, balance) {
         return;
     }
 
-    // Check if the balance is sufficient for the withdrawal
     if (amount > balance) {
         alert("Insufficient balance for this withdrawal.");
         return;
     }
 
-    // If all checks pass, proceed with the withdrawal
-    balance -= amount; // Deduct the amount from the balance
+    balance -= amount; 
     console.log("Withdrawal successful! New balance: Rs" + balance);
     return "Withdrawal successful! New balance: Rs" + balance;
 }
 
 // Example usage:
-let currentBalance = 100; // Example balance
-let withdrawalAmount = 30; // Example withdrawal amount
+let currentBalance = 100;
+let withdrawalAmount = 30; 
 
 withdraw(withdrawalAmount, currentBalance);

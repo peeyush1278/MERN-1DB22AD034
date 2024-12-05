@@ -1,14 +1,14 @@
 function isPrime(num) {
-    if (num <= 1) return false; // 0 and 1 are not prime numbers
+    if (num <= 1) return false; 
     for (let i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i === 0) return false; // Found a divisor, not prime
+        if (num % i === 0) return false; 
     }
-    return true; // No divisors found, it's prime
+    return true; 
 }
 
 function getFirstNPrimes(n) {
     const primes = [];
-    let num = 2; // Start checking for prime from 2
+    let num = 2; 
     while (primes.length < n) {
         if (isPrime(num)) {
             primes.push(num);
